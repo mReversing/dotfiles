@@ -221,8 +221,13 @@ set formatoptions+=mM
 set nu
 set relativenumber
 
-"标签只显示文件名
+"tab line 只显示文件名
 set guitablabel=%t
+
+"tab bar color
+hi TabLine     ctermfg=Black     ctermbg=DarkGreen cterm=NONE
+hi TabLineFill ctermfg=Black     ctermbg=DarkGreen cterm=NONE
+hi TabLineSel  ctermfg=DarkGreen ctermbg=Black     cterm=NONE
 
 "禁止vim生成 un~ ，奇怪的是设置了这三个NERDTree就会强制提示文件无法加载，设置 |wincmd P可解决
 set noundofile
