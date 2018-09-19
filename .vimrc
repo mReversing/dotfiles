@@ -26,6 +26,8 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-surround'
 Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-airline/vim-airline'
+Plugin 'junegunn/vim-easy-align'
 "Plugin 'flazz/vim-colorschemes'
 
 
@@ -152,6 +154,14 @@ endif
 set background=dark
 colorscheme solarized
 "call togglebg#map("<F1>")
+"---------------------------------------------------------------
+" vim-easy-align config
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap gl <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap gl <Plug>(EasyAlign)
 "---------------------------------------------------------------
 
 "解决中文乱码
