@@ -87,19 +87,20 @@ function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
 	exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
 endfunction
 
-call NERDTreeHighlightFile('jade',   'green',   'none', 'green',   'none')
-call NERDTreeHighlightFile('ini',    'yellow',  'none', 'yellow',  'none')
-call NERDTreeHighlightFile('md',     'blue',    'none', '#3366FF', 'none')
-call NERDTreeHighlightFile('yml',    'yellow',  'none', 'yellow',  'none')
-call NERDTreeHighlightFile('config', 'yellow',  'none', 'yellow',  'none')
-call NERDTreeHighlightFile('conf',   'yellow',  'none', 'yellow',  'none')
-call NERDTreeHighlightFile('json',   'yellow',  'none', 'yellow',  'none')
-call NERDTreeHighlightFile('html',   'yellow',  'none', 'yellow',  'none')
-call NERDTreeHighlightFile('styl',   'cyan',    'none', 'cyan',    'none')
-call NERDTreeHighlightFile('css',    'cyan',    'none', 'cyan',    'none')
-call NERDTreeHighlightFile('coffee', 'Red',     'none', 'red',     'none')
-call NERDTreeHighlightFile('js',     'Red',     'none', '#ffa500', 'none')
-call NERDTreeHighlightFile('php',    'Magenta', 'none', '#ff00ff', 'none')
+"guibg=NONE not none
+call NERDTreeHighlightFile('jade',   'green',   'none', 'green',   'NONE')
+call NERDTreeHighlightFile('ini',    'yellow',  'none', 'yellow',  'NONE')
+call NERDTreeHighlightFile('md',     'blue',    'none', '#3366FF', 'NONE')
+call NERDTreeHighlightFile('yml',    'yellow',  'none', 'yellow',  'NONE')
+call NERDTreeHighlightFile('config', 'yellow',  'none', 'yellow',  'NONE')
+call NERDTreeHighlightFile('conf',   'yellow',  'none', 'yellow',  'NONE')
+call NERDTreeHighlightFile('json',   'yellow',  'none', 'yellow',  'NONE')
+call NERDTreeHighlightFile('html',   'yellow',  'none', 'yellow',  'NONE')
+call NERDTreeHighlightFile('styl',   'cyan',    'none', 'cyan',    'NONE')
+call NERDTreeHighlightFile('css',    'cyan',    'none', 'cyan',    'NONE')
+call NERDTreeHighlightFile('coffee', 'Red',     'none', 'red',     'NONE')
+call NERDTreeHighlightFile('js',     'Red',     'none', '#ffa500', 'NONE')
+call NERDTreeHighlightFile('php',    'Magenta', 'none', '#ff00ff', 'NONE')
 "---------------------------------------------------------------
 "vim-php-cs-fixer config
 "https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases
