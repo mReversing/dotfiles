@@ -332,9 +332,8 @@ if has('win32')
 endif
 "---------------------------
 
-"显示并把根目录树置为www
-autocmd VimEnter * silent NERDTree | wincmd p
-autocmd vimenter * NERDTree www
+"显示并把根目录树置为www并切换上一个window
+autocmd VimEnter * silent NERDTree www | wincmd p
 
 " autoload _vimrc保存后自动生效
 if has('win32')
