@@ -27,6 +27,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'flazz/vim-colorschemes'
@@ -157,6 +158,19 @@ set background=dark
 colorscheme solarized
 "call togglebg#map("<F1>")
 "---------------------------------------------------------------
+"vim-airline
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+"let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+set fillchars+=vert:\|
+hi clear VertSplit
+"hi vertsplit cterm=NONE ctermbg=NONE guifg=NONE guibg=NONE
+
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
+"---------------------------------------------------------------
 " vim-easy-align config
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
@@ -224,12 +238,12 @@ set nu
 set relativenumber
 
 "tab line 只显示文件名
-set guitablabel=%t
+"set guitablabel=%t
 
 "tab bar color
-hi TabLine     ctermfg=Black     ctermbg=DarkGreen cterm=NONE
-hi TabLineFill ctermfg=Black     ctermbg=DarkGreen cterm=NONE
-hi TabLineSel  ctermfg=DarkGreen ctermbg=Black     cterm=NONE
+"hi TabLine     ctermfg=Black     ctermbg=DarkGreen cterm=NONE
+"hi TabLineFill ctermfg=Black     ctermbg=DarkGreen cterm=NONE
+"hi TabLineSel  ctermfg=DarkGreen ctermbg=Black     cterm=NONE
 
 "禁止vim生成 un~ ，奇怪的是设置了这三个NERDTree就会强制提示文件无法加载，设置 |wincmd P可解决
 set noundofile
